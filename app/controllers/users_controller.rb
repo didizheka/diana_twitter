@@ -53,7 +53,7 @@ class UsersController < ApplicationController
     
     def signed_in_user
       unless signed_in?
-        flash[:danger] = "Please sign in."
+        flash[:danger] = "Пожалуйста, войдите в систему."
         store_location
         redirect_to signin_url
       end
